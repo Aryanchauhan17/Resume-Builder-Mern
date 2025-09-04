@@ -1,0 +1,77 @@
+/* Register page wrapper - full screen with gradient */
+.login-page {  /* same class name, reuse for consistency */
+    background: linear-gradient(135deg, #cce7ff, #99d6ff); /* light blue gradient */
+    min-height: 100vh;          /* full viewport height */
+    width: 100%;
+    display: flex;               /* flexbox for centering */
+    align-items: center;         /* vertical center */
+    justify-content: center;     /* horizontal center */
+    padding: 20px;               /* for smaller screens */
+}
+
+/* Register container - white card */
+.login-container {  /* reuse same class as login for identical style */
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form inputs */
+.login-container input {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb; /* blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn.login-btn:hover {
+    background-color: #1d4ed8; /* darker blue on hover */
+}
+
+/* Error & Success messages */
+.error-text {
+    color: #ef4444; /* red */
+    margin-bottom: 10px;
+}
+
+.success-text {
+    color: #16a34a; /* green */
+    margin-bottom: 10px;
+}
+
+/* Bottom links */
+.login-links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-links a {
+    margin-left: 5px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}

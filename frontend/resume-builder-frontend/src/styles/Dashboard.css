@@ -1,0 +1,176 @@
+/* Dashboard.css */
+
+/* General Layout */
+.dashboard-container {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Top Navbar */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.left-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dashboard-header p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Resume Grid */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Resume Card */
+.resume-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.resume-card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.resume-email,
+.resume-phone {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.resume-skills {
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  color: #374151;
+}
+
+/* Resume Actions */
+.resume-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Action Buttons */
+.view-btn {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.view-btn:hover {
+  background: #dbeafe;
+}
+
+.edit-btn {
+  color: #047857;
+  background: #ecfdf5;
+}
+
+.edit-btn:hover {
+  background: #d1fae5;
+}
+
+.delete-btn {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+/* Top Buttons */
+.create-btn {
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.create-btn:hover {
+  background: #1d4ed8;
+}
+
+.logout-btn {
+  background: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background: #e5e7eb;
+}
+
+/* States */
+.loading-text,
+.no-resumes,
+.error-text {
+  font-size: 1rem;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.error-text {
+  color: #dc2626;
+}

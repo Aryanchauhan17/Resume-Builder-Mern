@@ -1,0 +1,81 @@
+/* Login page container */
+.login-page {
+    background: linear-gradient(135deg, #cce7ff, #99d6ff); /* light blue gradient */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Login container */
+.login-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Title */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+}
+
+/* Input fields */
+.login-container input {
+    width: 100%;
+    padding: 12px 15px;
+    max-width: 320px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.login-container input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,0.3);
+}
+
+/* Button */
+.btn.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    transition: background 0.3s;
+}
+
+.btn.login-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Error & Success messages */
+.error-text {
+    color: #ef4444;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.success-text {
+    color: #16a34a;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
