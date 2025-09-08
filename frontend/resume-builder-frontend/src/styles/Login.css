@@ -1,6 +1,5 @@
-/* Login page container */
 .login-page {
-    background: linear-gradient(135deg, #cce7ff, #99d6ff); /* light blue gradient */
+    background: linear-gradient(135deg, #cce7ff, #99d6ff); 
     min-height: 100vh;
     display: flex;
     align-items: center;

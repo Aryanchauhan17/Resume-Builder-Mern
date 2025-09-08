@@ -70,7 +70,7 @@ const Dashboard = () => {
         <div className="left-header">
           <h2 className="logo">BuildResume</h2>
           <div className="user-info">
-          <h1>👋 Welcome, {user.name}</h1>
+          <h1> Welcome, {user.name}</h1>
           <p>{user.email}</p>
         </div>
         </div>

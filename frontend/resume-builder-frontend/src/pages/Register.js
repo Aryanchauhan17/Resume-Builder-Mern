@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { registerUser } from "../api/api";
 import { useNavigate } from "react-router-dom";
-import "../styles/Login.css"; // Reuse the same CSS as login
+import "../styles/Login.css"; 
 
 const Register = () => {
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ const Register = () => {
   };
 
   return (
-    <div className="login-page"> {/* Full-page wrapper for centering */}
+    <div className="login-page"> 
       <div className="login-container">
         <h2>Register</h2>
 

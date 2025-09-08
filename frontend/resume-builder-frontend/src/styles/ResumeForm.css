@@ -12,7 +12,7 @@
     flex: 1;
 }
 
-/* Live Preview section */
+/* Live Preview  */
 .resume-preview-right {
     flex: 1;
     background-color: #ffffff;
@@ -41,7 +41,7 @@
     color: #374151;
 }
 
-/* Summary / Objective */
+/* Summary */
 .resume-preview-summary {
     margin-bottom: 15px;
 }
@@ -57,7 +57,7 @@
     color: #4b5563;
 }
 
-/* Section styling */
+/* Section */
 .resume-preview-section {
     margin-bottom: 15px;
 }

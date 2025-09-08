@@ -1,16 +1,15 @@
-/* Register page wrapper - full screen with gradient */
-.login-page {  /* same class name, reuse for consistency */
-    background: linear-gradient(135deg, #cce7ff, #99d6ff); /* light blue gradient */
-    min-height: 100vh;          /* full viewport height */
+.login-page {  
+    background: linear-gradient(135deg, #cce7ff, #99d6ff); 
+    min-height: 100vh;          
     width: 100%;
-    display: flex;               /* flexbox for centering */
-    align-items: center;         /* vertical center */
-    justify-content: center;     /* horizontal center */
-    padding: 20px;               /* for smaller screens */
+    display: flex;               
+    align-items: center;         
+    justify-content: center;     
+    padding: 20px;               
 }
 
-/* Register container - white card */
-.login-container {  /* reuse same class as login for identical style */
+/* Register container */
+.login-container {  
     background: white;
     padding: 40px 30px;
     border-radius: 12px;
@@ -35,7 +34,7 @@
 .btn.login-btn {
     width: 100%;
     padding: 12px;
-    background-color: #2563eb; /* blue */
+    background-color: #2563eb;
     color: white;
     border: none;
     border-radius: 8px;
@@ -45,17 +44,17 @@
 }
 
 .btn.login-btn:hover {
-    background-color: #1d4ed8; /* darker blue on hover */
+    background-color: #1d4ed8; 
 }
 
 /* Error & Success messages */
 .error-text {
-    color: #ef4444; /* red */
+    color: #ef4444; 
     margin-bottom: 10px;
 }
 
 .success-text {
-    color: #16a34a; /* green */
+    color: #16a34a;
     margin-bottom: 10px;
 }
 

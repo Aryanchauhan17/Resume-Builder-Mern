@@ -4,10 +4,10 @@
     margin: 30px auto;
     padding: 40px 50px;
     border-radius: 12px;
-    background: #ffffff; /* white paper-like */
+    background: #ffffff; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     font-family: 'Inter', sans-serif;
-    color: #111827; /* dark text */
+    color: #111827; 
     line-height: 1.6;
 }
 
@@ -40,7 +40,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: #1f2937;
-    border-bottom: 2px solid #1f2937; /* subtle green underline */
+    border-bottom: 2px solid #1f2937; 
     padding-bottom: 6px;
     margin: 25px 0 15px;
 }
@@ -60,8 +60,8 @@
 }
 
 .skill-item {
-    background-color: #f3f4f6; /* softer green accent */
-    color: #111827; /* readable dark green */
+    background-color: #f3f4f6; 
+    color: #111827; 
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -131,7 +131,7 @@
 
 /* Download button */
 .download-btn {
-    background-color: #2563eb; /* blue to match dashboard */
+    background-color: #2563eb; 
     color: #ffffff;
 }
 
@@ -139,7 +139,7 @@
     background-color: #1d4ed8;
 }
 
-/* Edit button (if needed) */
+/* Edit button  */
 .edit-btn {
     background-color: #10b981;
     color: #ffffff;

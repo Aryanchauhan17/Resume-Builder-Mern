@@ -1,10 +1,8 @@
-// controllers/userController.js
-const User = require("../models/User"); // Import User model
+const User = require("../models/User"); 
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-// @desc Register a new user
-// @route POST /api/users/register
+
 const registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -35,8 +33,7 @@ const registerUser = async (req, res) => {
   }
 };
 
-// @desc Login user & get token
-// @route POST /api/users/login
+
 const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -56,7 +53,7 @@ const loginUser = async (req, res) => {
     // Generate JWT token
     const token = jwt.sign(
       { id: user._id },
-      process.env.JWT_SECRET, // Add this in .env file
+      process.env.JWT_SECRET, 
       { expiresIn: "1h" }
     );
 

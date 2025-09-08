@@ -5,7 +5,7 @@ exports.createResume = async (req, res) => {
     try {
         const newResume = new Resume({
             ...req.body,
-            user: req.user.id   // attach logged-in user
+            user: req.user.id   
         });
 
         const savedResume = await newResume.save();
@@ -15,7 +15,7 @@ exports.createResume = async (req, res) => {
     }
 };
 
-// Get all resumes of the logged-in user
+// Get all resumes of the loggedin user
 exports.getResumesByUser = async (req, res) => {
     try {
         const resumes = await Resume.find({ user: req.user.id });
@@ -25,13 +25,13 @@ exports.getResumesByUser = async (req, res) => {
     }
 }; 
 
-// Get a single resume by id (only if it belongs to the user)
+// Get a single resume by id 
 exports.getResumeById = async (req, res) => {
     try {
         const userId = req.user.id || req.user._id;
         const resume = await Resume.findOne({
-            _id: req.params.id,   // ✅ fixed field name
-            user: userId,         // ownership check
+            _id: req.params.id,   
+            user: userId,         
         }); 
 
         if (!resume) {
@@ -44,12 +44,12 @@ exports.getResumeById = async (req, res) => {
     }
 };
 
-// Update resume by id (only if it belongs to the user)
+// Update resume by id 
 exports.updateResume = async (req, res) => {
     try {
         const updatedResume = await Resume.findOneAndUpdate(
             { _id: req.params.id, user: req.user.id }, // ownership check
-            { ...req.body }, // ✅ spread req.body so linkedin & new fields are included
+            { ...req.body },
             { new: true }
         );
 
@@ -63,7 +63,7 @@ exports.updateResume = async (req, res) => {
     }
 };
 
-// Delete resume by id (only if it belongs to the user)
+// Delete resume by id 
 exports.deleteResume = async (req, res) => {
     try {
         const deletedResume = await Resume.findOneAndDelete({

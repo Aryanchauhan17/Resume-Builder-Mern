@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { loginUser } from "../api/api"; // make sure this exists
+import { loginUser } from "../api/api";
 import { useNavigate } from "react-router-dom";
-import "../styles/Login.css"; // import the CSS file
+import "../styles/Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await loginUser(form); // call API
-      localStorage.setItem("token", res.data.token); // save token
+      localStorage.setItem("token", res.data.token); // save or store token
       setSuccess("Login successful!");
       setError("");
       navigate("/dashboard"); // redirect to dashboard
@@ -38,7 +38,7 @@ const Login = () => {
   };
 
  return (
-  <div className="login-page">  {/* Full-page wrapper for centering */}
+  <div className="login-page">  
     <div className="login-container">
       <h2>Login</h2>
 

@@ -33,7 +33,7 @@ export const getProfile = () => api.get("/auth/profile");
 //create a new resume
 export const createResume = (data) => api.post("/resumes", data);
 
-// get all resumes of logged-in user
+// get all resumes of loggedin user
 export const getResumes = () => api.get("/resumes");
 
 //get resume by id

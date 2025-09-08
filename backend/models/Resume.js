@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-//define resume schema
+
 const resumeSchema = new mongoose.Schema( {
     user: {
         type: mongoose.Schema.Types.ObjectId,
@@ -56,5 +56,5 @@ const resumeSchema = new mongoose.Schema( {
  
 );
  
-//export resume model
+
 module.exports = mongoose.model("Resume", resumeSchema);

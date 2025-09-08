@@ -49,7 +49,7 @@ const ResumeView = () => {
 
   return (
     <div className="resume-view-container">
-      {/* Only this content will be in the PDF */}
+      
       <div ref={resumeContentRef}>
         {/* Header */}
         <div className="resume-header">
@@ -149,7 +149,7 @@ const ResumeView = () => {
         </section>
       </div>
 
-      {/* Buttons are outside PDF content */}
+      
       <div className="resume-buttons">
         <button className="btn back-btn" onClick={() => navigate("/dashboard")}>
           Back to Dashboard
