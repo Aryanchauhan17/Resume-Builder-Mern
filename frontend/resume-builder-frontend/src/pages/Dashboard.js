@@ -55,7 +55,7 @@ const Dashboard = () => {
         alert("Failed to delete resume");
       }
     }
-  };
+  };  
 
   const handleView = (id) => navigate(`/resume/view/${id}`);
   const handleEdit = (id) => navigate(`/resume/edit/${id}`);

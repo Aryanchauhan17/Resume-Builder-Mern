@@ -84,6 +84,7 @@ const ResumeForm = () => {
       fetchResume();
     }
   }, [id, isEdit]);
+  //dep array ensures effect runs when id or isEdit change 
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
